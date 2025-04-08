@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <style>
+      body {
+        width: 320px;
+        min-height: 200px;
+        margin: 0;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(to bottom right, #ffffff, #f0f7ff);
+        color: #1a1a1a;
+      }
+
+      .header {
+        text-align: center;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(to right, #2563eb, #60a5fa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 0;
+      }
+
+      .card {
+        background: white;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .toggle-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #4b5563;
+      }
+
+      .toggle-switch {
+        position: relative;
+        width: 56px;
+        height: 28px;
+      }
+
+      .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .toggle-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #e5e7eb;
+        transition: .4s;
+        border-radius: 34px;
+      }
+
+      .toggle-slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+      }
+
+      input:checked + .toggle-slider {
+        background-color: #3b82f6;
+      }
+
+      input:checked + .toggle-slider:before {
+        transform: translateX(28px);
+      }
+
+      .status-message {
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-top: 16px;
+        border-radius: 6px;
+        transition: all 0.3s;
+      }
+
+      .status-message.enabled {
+        background-color: #dcfce7;
+        color: #166534;
+      }
+
+      .status-message.disabled {
+        background-color: #fee2e2;
+        color: #991b1b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Twitter and Discord Translator</h1>
+    </div>
+    
+    <div class="card">
+      <div class="toggle-container">
+        <span class="toggle-label">Enable Translation</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleSwitch">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+      <div id="statusMessage" class="status-message"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
