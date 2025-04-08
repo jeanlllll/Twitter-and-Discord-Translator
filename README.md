@@ -212,10 +212,3 @@ The extension uses a proxy to ensure stable access to various services. Here's h
 
 ---
 
-<div align="center">
-
-Made with ❤️ for the global community
-
-用❤️為全球社群打造
-
-</div>
