@@ -93,7 +93,7 @@ The extension uses a proxy to ensure stable access to various services. Here's h
 <details>
 <summary>Click to view Twitter translation</summary>
 
-![Uploading image.png…]()
+![Twitter 翻譯](https://github.com/user-attachments/assets/08d9715f-4b3e-420e-9104-044fa64ae8e0)
 
 </details>
 
@@ -189,7 +189,7 @@ The extension uses a proxy to ensure stable access to various services. Here's h
 <details>
 <summary>點擊查看 Discord 翻譯效果</summary>
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/b7e03580-ed48-4544-aa51-f99b06155e19)
 
 </details>
 
